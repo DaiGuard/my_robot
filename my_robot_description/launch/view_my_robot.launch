@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="use_gui" default="true" />
+
+  <include file="$(find my_robot_description)/launch/my_robot_upload.launch"/>
+
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <param name="use_gui" value="$(arg use_gui)"/>
+  </node>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_robot_description)/config/my_robot.rviz" required="true" />
+</launch>
