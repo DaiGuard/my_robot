@@ -1,0 +1,12 @@
+- git:
+    local-name: Universal_Robots_ROS_Driver
+    uri: https://github.com/UniversalRobots/Universal_Robots_ROS_Driver
+    version: master
+- git:
+    local-name: robotiq
+    uri: https://github.com/DaiGuard/robotiq
+    version: robotiq_2f_85_gazebo
+- git:
+    local-name: universal_robot
+    uri: https://github.com/fmauch/universal_robot
+    version: calibration_devel
