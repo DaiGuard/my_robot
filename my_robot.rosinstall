@@ -10,3 +10,7 @@
     local-name: universal_robot
     uri: https://github.com/fmauch/universal_robot
     version: calibration_devel
+- git:
+    local-name: roboticsgroup_gazebo_plugins
+    uri: https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins
+    version: master
